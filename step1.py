@@ -60,10 +60,9 @@ Remember: Always keep access tokens confidential. Store securely and never expos
 or public repositories.
 """
 
-
+from constants import LINKEDIN_ACCESS_TOKEN
 import requests
 
-ACCESS_TOKEN = "AQVEFlu_MjwuSPI7udFa3asAWhBXv2E6gbKASWf2w997nveU2W94mDxrmHaYgWkwiW968wSAF2fByhQRmuIutIQHbbEQf-aB_kEn1DywhdxbF_eYM_7bPBKIB8KQAv_iJCe_WKTsi4NGCnb_pfzXE0FMeEftVMguiMLMORp-iKau6NcsGB7cLwlhObW8EY5RfcIrShs3DAb-1zHLbj2iMcghqGSo79sq6Q-RVi3SE4mh9TH-hT1kPrNPEg9FBt49YgC5Kr76BEu1HNxH5EkXAtwuVn-wkPxhdalXF3ccxyyyhoWwPXho9S0i02uh3vXyCJeIwiZS-2LEK9MP1J4l-FJvFtn-hA"  # Replace with the user's access token
 HEADERS = {
     "Authorization": f"Bearer {ACCESS_TOKEN}"
 }
