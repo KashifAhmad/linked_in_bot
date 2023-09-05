@@ -1,0 +1,5 @@
+constants.py
+.env
+.vscode
+myenv
+blog.log
