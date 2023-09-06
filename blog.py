@@ -170,6 +170,14 @@ LINKEDIN_MEMBER_URN = f"urn:li:person:{member_info['sub']}"
 logging.info(f"LinkedIn Member URN fetched: {LINKEDIN_MEMBER_URN}")
 
 
+def count_while_sleep(iteration_limit, sleep_duration):
+    count = 0
+    
+    while count < iteration_limit:
+        count += 1
+        print(f"300 Seconds = 5 Min Delay Counting to 5 : {count}")
+        time.sleep(sleep_duration)
+
 if __name__ == "__main__":
     logging.info("Script execution started.")
     print("Script execution started.")
@@ -222,6 +230,8 @@ if __name__ == "__main__":
             print("No more post ideas left!")
             break  # Exit the loop if no ideas left
         
+        # Call the count_while_sleep function here to count iterations while sleeping
+        count_while_sleep(5, 60)  # Count 5 iterations with a sleep of 60 seconds each
         time.sleep(300)  # Sleep 5 min
     
     logging.info("No more ideas left in the list. Script execution completed gracefully.")
